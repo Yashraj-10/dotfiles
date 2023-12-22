@@ -1,8 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-import:
-    - "/home/yashraj/.config/alacritty/colours.yml"
-
+# import:
+#     - "/home/yashraj/.config/alacritty/colours.yml"
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -45,7 +44,6 @@ window:
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
-  startup_mode: Windowed
 
   # Window decorations
   #
@@ -62,7 +60,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.0
+  opacity: 0.92
 
   # Startup Mode (changes require restart)
   #
@@ -73,7 +71,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  #startup_mode: Windowed
+  startup_mode: Windowed
 
   # Window title
   #title: Alacritty
@@ -98,9 +96,8 @@ scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
   history: 10000
-
   # Scrolling distance multiplier.
-  #multiplier: 3
+  multiplier: 1
 
 # Font configuration
 font:
@@ -151,7 +148,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 16.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -176,6 +173,28 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
+colors:
+  primary:
+    background: '#002221'
+    foreground: '#e6f8f8'
+  normal:
+    black: '#002221'
+    red: '#ea3431'
+    green: '#00b6b6'
+    yellow: '#f8b017'
+    blue: '#4894fd'
+    magenta: '#e01dca'
+    cyan: '#1ab2ad'
+    white: '#99dddb'
+  bright:
+    black: '#006562'
+    red: '#ea3431'
+    green: '#00b6b6'
+    yellow: '#f8b017'
+    blue: '#4894fd'
+    magenta: '#e01dca'
+    cyan: '#1ab2ad'
+    white: '#e6f6f6'
 # Colors (Tomorrow Night)
 #colors:
   # Default colors
